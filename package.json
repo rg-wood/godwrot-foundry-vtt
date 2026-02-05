@@ -1,0 +1,18 @@
+{
+  "name": "godwrot",
+  "version": "2.0.0",
+  "description": "CSS compiler for the GODWROT system",
+  "scripts": {
+    "build": "sass src/scss/godwrot.scss css/godwrot.css --style=expanded --no-source-map",
+    "watch": "sass src/scss/godwrot.scss css/godwrot.css --style=expanded --source-map --watch"
+  },
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "author": "Ric Wood",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
