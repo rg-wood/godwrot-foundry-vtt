@@ -4,19 +4,13 @@
   "description": "The GODWROT system for FoundryVTT!",
   "authors": [
     {
-      "name": "Asacolips",
-      "discord": "asacolips"
-    },
-    {
-      "name": "Lee Talman",
-      "discord": ".pizzaWizard"
+      "name": "Grisly Eye Games",
+      "url": "https://grislyeye.com"
     }
   ],
-  "url": "Replace this with a link to your public repository",
+  "url": "https://github.com/rg-wood/godwrot-foundry-vtt",
   "license": "LICENSE.txt",
   "readme": "README.md",
-  "bugs": "Replace this with a link to file issues or tickets",
-  "changelog": "CHANGELOG.md",
   "media": [
     {
       "type": "setup",
@@ -24,13 +18,17 @@
       "thumbnail": "systems/godwrot/assets/anvil-impact.png"
     }
   ],
-  "version": "2.0.0",
+  "version": "0.0.5",
   "compatibility": {
-    "minimum": 11,
-    "verified": "11.315"
+    "minimum": 13,
+    "verified": "13.351"
   },
-  "esmodules": ["module/godwrot.mjs"],
-  "styles": ["css/godwrot.css"],
+  "esmodules": [
+    "module/godwrot.mjs"
+  ],
+  "styles": [
+    "css/godwrot.css"
+  ],
   "languages": [
     {
       "lang": "en",
