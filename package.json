@@ -1,6 +1,6 @@
 {
   "name": "godwrot",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "CSS compiler for the GODWROT system",
   "scripts": {
     "build": "sass src/scss/godwrot.scss css/godwrot.css --style=expanded --no-source-map",

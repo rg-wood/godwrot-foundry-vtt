@@ -25,18 +25,13 @@ jobs:
         download: https://github.com/${{github.repository}}/releases/download/${{github.event.release.tag_name}}/system.zip
         flags: "{}"
 
-    - name: Create destination directory for compiled CSS
-      run: mkdir -vp ./css
-  
-    - name: Compile CSS from SCSS files
-      - uses: actions/checkout@v4
-      - name: Use Node.js 24.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 24.x
-          cache: "npm"
-      - run: npm ci
-      - run: npm run build
+    - name: Use Node.js 24.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: 24.x
+        cache: "npm"
+
+    - run: npm ci && npm run build
 
     - run: zip -r ${{ env.package_type }}.zip LICENSE.txt README.md system.json assets/ css/ lang/ lib/ module/ packs/ templates/
 
