@@ -55,6 +55,21 @@
     }
   }
 
+  // Item Description
+  .item-description {
+    flex: 2;
+    margin: 0;
+    font-size: 13px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    border-bottom: solid var(--color-border-light-primary);
+    h3, h4 {
+      margin: 0;
+      overflow-x: hidden;
+    }
+  }
+
   // Control Buttons
   .item-controls {
     display: flex;
@@ -115,7 +130,7 @@
 
 // Example style for Godwrot (can be removed if not needed).
 .item-formula {
-  
+
   flex: 0 0 200px;
   padding: 0 8px;
 }
