@@ -3,6 +3,10 @@
  * @extends {Actor}
  */
 export class GodwrotActor extends Actor {
+
+  name = "Protagonist";
+  type = "protagonist";
+
   /** @override */
   prepareData() {
     // Prepare data for the actor. Calling the super version of this executes
