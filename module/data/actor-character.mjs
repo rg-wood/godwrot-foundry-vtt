@@ -21,8 +21,6 @@ export default class GodwrotCharacter extends GodwrotActorBase {
       return obj;
     }, {}));
 
-    schema.type = new fields.DocumentTypeField(this, { initial: 'actor' })
-
     return schema;
   }
 
