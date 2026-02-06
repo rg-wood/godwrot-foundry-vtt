@@ -69,6 +69,8 @@ Hooks.once('init', function () {
     label: 'GODWROT.SheetLabels.Item',
   });
 
+  Handlebars.registerHelper('sanitise', (html) => typeof html === 'string' ? html.replace(/<[^>]*>?/gm, '') : html);
+
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
 });

@@ -1,16 +1,15 @@
 {
   "GODWROT": {
     "Ability": {
+      "Agi": { "long": "Agility", "abbr": "agi" },
+      "Cun": { "long": "Cunning", "abbr": "cun" },
       "Str": { "long": "Strength", "abbr": "str" },
-      "Con": { "long": "Constitution", "abbr": "con" },
-      "Dex": { "long": "Dexterity", "abbr": "dex" },
-      "Int": { "long": "Intelligence", "abbr": "int" },
-      "Wis": { "long": "Wisdom", "abbr": "wis" },
-      "Cha": { "long": "Charisma", "abbr": "cha" }
+      "Wil": { "long": "Will", "abbr": "wil" },
+      "Wit": { "long": "Wits", "abbr": "wit" }
     },
     "SheetLabels": {
-      "Actor": "Godwrot Actor Sheet",
-      "Item": "Godwrot Item Sheet"
+      "Actor": "Protagonist Sheet",
+      "Item": "Item Sheet"
     },
     "Item": {
       "Spell": {
@@ -29,12 +28,12 @@
 
   "TYPES": {
     "Actor": {
-      "character": "Character",
+      "character": "Protagonist",
       "npc": "NPC"
     },
     "Item": {
       "item": "Item",
-      "feature": "Feature",
+      "feature": "Move",
       "spell": "Spell"
     }
   }
